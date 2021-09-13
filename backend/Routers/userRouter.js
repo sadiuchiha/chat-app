@@ -47,13 +47,12 @@ userRouter.post(
     //if(!friendId) then add friend
     const friendId = req.body.friendId;
     const currentUser = await User.findOne({ _id: req.params.id });
-    currentUser.friends.push(friendId)
+    currentUser.friends.push(friendId);
 
     currentUser.save((err) => {
-      if(!err) res.send(currentUser)
-      else res.send(err)
-    })
-
+      if (!err) res.send(currentUser);
+      else res.send(err);
+    });
   })
 );
 
@@ -69,6 +68,34 @@ userRouter.post(
 
     const createdUser = await user.save();
     res.send({ createdUser });
+  })
+);
+
+userRouter.post(
+  "/signin",
+  expressAsyncHandler(async (req, res) => {
+    
+    const email = req.body.email
+    const password = req.body.password
+
+    const userExist = await User.findOne({
+      email: email,
+    });
+    if (userExist) {
+      if(password === userExist.password)  {
+        res.send({
+          _id: userExist._id,
+          name: userExist.name,
+          email: userExist.email,
+          isAdmin: userExist.isAdmin,
+          createdAt: userExist.createdAt
+        });  
+      } else {
+        res.send({Message: "Password didn't match"})
+      } 
+    } else {
+      res.status(404).send({ message: `User with ${email} not found!` });
+    }
   })
 );
 

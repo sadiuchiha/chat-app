@@ -61,10 +61,9 @@ var messageDirecter = async (message, sender, receiver, chatBoxId) => {
   return await chatBox.save();
 };
 
-//Get all last messages of the user of :id sent/receive
-//All the message sent: from currentID to receiverID
-//And the message received: to currentID from otherID's
-//Query: allMsg(currentID, toSelectedID) or allMsg(toSelectedID, currentID)
+//Get all messages of the user of :chatId of ChatBox
+//All the message sent and received: from currentID to receiverID of the ChatId(currentID + receiverID) 
+//Query: findallMsg(chatId)
 messageRouter.get(
   "/allMsg/:chatId",
   expressAsyncHandler(async (req, res) => {
