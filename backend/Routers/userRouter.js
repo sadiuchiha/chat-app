@@ -42,6 +42,22 @@ userRouter.get(
 );
 
 userRouter.post(
+  "/:id/addFriend",
+  expressAsyncHandler(async (req, res) => {
+    //if(!friendId) then add friend
+    const friendId = req.body.friendId;
+    const currentUser = await User.findOne({ _id: req.params.id });
+    currentUser.friends.push(friendId)
+
+    currentUser.save((err) => {
+      if(!err) res.send(currentUser)
+      else res.send(err)
+    })
+
+  })
+);
+
+userRouter.post(
   "/register",
   expressAsyncHandler(async (req, res) => {
     const user = new User({
