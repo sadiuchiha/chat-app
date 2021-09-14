@@ -77,6 +77,10 @@ a.brand {
   margin-left: 1rem;
 }
 
+.center {
+  justify-content: center;
+}
+
 .row.center {
   justify-content: center;
 }
@@ -87,6 +91,7 @@ h1 {
 }
 
 h2 {
+  font-family: "Anton", sans-serif;
   font-size: 1.6rem;
   padding: 1rem 0;
 }
@@ -117,3 +122,19 @@ li {
   font-family: 'Yanone Kaffeesatz', sans-serif; 
   font-size: 2rem;
 } 
+
+/* Homeview */
+
+.home-container h1 {
+
+  font-size: 3rem;
+  margin: -0.5rem;
+}
+
+.home-container p {
+
+  font-size: 2rem;
+  margin: -0.5rem;
+
+
+}
