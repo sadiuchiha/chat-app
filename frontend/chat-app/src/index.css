@@ -1,13 +1,119 @@
+/* Fonts : Pacifico, Lobster Two, Anton, Yanone Kaffeesatz */
+
+:root {
+  --dark-blue-color: #5788b9;
+  --tab-color: #132729;
+  --hover-effect-color: #31f02a;
+  --white-color: #fff;
+  --grey-color: rgb(53, 53, 53);
+  --light-grey-color: rgb(77, 77, 77);
+  --extra-light-grey-color: rgb(187, 187, 187);
+}
+
+html {
+  font-size: 62.5%; /* default size: 16px * 62.5 = 10px = 1rem */
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  height: 100%;
 }
+/* Layout */
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+
+header {
+  grid-area: header;
+  background-color: var(--dark-blue-color);
+}
+
+main {
+  grid-area: main;
+  padding: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  background-color: var(--dark-blue-color);
+  color: var(--white-color);
+}
+
+/* Commons */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tabs {
+  margin: 1rem;
+  color: var(--tab-color);
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+}
+
+a.brand {
+  color: var(--white-color);
+  font-family: "Lobster Two", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+.row.center {
+  justify-content: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.tabs:hover {
+  color: var(--hover-effect-color);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-top: 1rem;
+}
+
+.footer {
+  font-family: 'Yanone Kaffeesatz', sans-serif; 
+  font-size: 2rem;
+} 

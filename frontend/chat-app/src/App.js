@@ -1,20 +1,54 @@
-import { BrowserRouter, Link } from "react-router-dom";
+import { BrowserRouter, Link, Route } from "react-router-dom";
+import HomeView from "./Views/HomeView";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="container">
-        <div className="grid-container">
-          <header className="row">
+      <div className="grid-container">
+        <header className="row">
+          <div>
+            <Link className="brand" to="/">
+              ChatZ
+            </Link>
+          </div>
+
+          <div className="row tab-collection">
             <div>
-              <Link className="brand" to="/">
-                ChatZ
+              <Link className="tabs" to="/">
+                Home
               </Link>
             </div>
-          </header>
+            <div>
+              <Link className="tabs" to="/messages">
+                Messages
+              </Link>
+            </div>
 
-          <footer className="row center">All Rights reserved</footer>
-        </div>
+            <div>
+              <Link className="tabs" to="/friends">
+                Friends
+              </Link>
+            </div>
+
+            <div>
+              <Link className="tabs" to="/profile">
+                Profile
+              </Link>
+            </div>
+
+            <div>
+              <Link className="tabs" to="/logout">
+                Logout
+              </Link>
+            </div>
+          </div>
+        </header>
+        <main>
+          <main>
+            <Route path="/" component={HomeView}></Route>
+          </main>
+        </main>
+        <footer className="row center footer">All Rights reserved</footer>
       </div>
     </BrowserRouter>
   );
