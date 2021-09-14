@@ -2,7 +2,9 @@
 
 :root {
   --dark-blue-color: #5788b9;
-  --tab-color: #132729;
+  --tab-color: #3f435c;
+  --brand-color: #ececec;
+
   --hover-effect-color: #31f02a;
   --white-color: #fff;
   --grey-color: rgb(53, 53, 53);
@@ -40,11 +42,13 @@ body {
 header {
   grid-area: header;
   background-color: var(--dark-blue-color);
+  
 }
 
 main {
   grid-area: main;
   padding: 1rem;
+  background-color: rgb(214, 213, 241);
 }
 
 footer {
@@ -69,16 +73,12 @@ footer {
 }
 
 a.brand {
-  color: var(--white-color);
+  color: var(--brand-color);
   font-family: "Lobster Two", cursive;
   font-size: 3rem;
   font-weight: bold;
   padding: 1rem;
   margin-left: 1rem;
-}
-
-.center {
-  justify-content: center;
 }
 
 .row.center {
@@ -119,22 +119,115 @@ li {
 }
 
 .footer {
-  font-family: 'Yanone Kaffeesatz', sans-serif; 
+  font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 2rem;
-} 
+}
 
 /* Homeview */
 
 .home-container h1 {
-
   font-size: 3rem;
   margin: -0.5rem;
 }
 
 .home-container p {
-
   font-size: 2rem;
   margin: -0.5rem;
+}
+/* Homeview Ends */
 
+/* FriendView */
+
+.friends-box {
+  height: 50rem;
+  width: 40rem;
+  opacity: 0.9;
+  background-color: rgb(45, 74, 151);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #132729;
+  margin: 2rem;
+}
+
+.friends-box h2 {
+  color: var(--brand-color);
+  font-family: Lobster Two, sans-serif;
+  font-size: 2.5rem;
+}
+.friends-list-holder {
+  width: 100%;
+  height: 65%;
+  background-color: #2aa1f0;
+  display: flex;
+  flex-direction: column;
+  overflow:auto;
+}
+
+.friend {
+  display: flex;
+  border: #132729 0.05rem solid;
+}
+
+.friend:hover {
+  background-color: orange;
+}
+
+.user-info {
+  margin-left: 0.5rem;
+}
+
+.user-info h3 {
+  font-family: Kaffeesatz,sans-serif;
+}
+
+.user-info h4 {
+  font-size: 1.5rem;
+  margin-top: -1rem;
+  font-family: Kaffeesatz,sans-serif;
+}
+
+.propic-container-small {
+  width: 8rem;
+  height: 8rem;
+  margin: 0.5rem;
+  background-color: coral;
+}
+
+
+.friend-buttons {
+  margin-top: 2rem;
+}
+
+.friend-button {
+  font-family: Pacifico, sans-serif;
+  padding: 1rem 2rem 1rem 2rem;
+  margin-left: 2rem;
+  background-color: #5788b9;
+  border-radius: 0.5rem;
+  border: #132729 0.1rem solid;
+  box-shadow: 0.3rem 0.3rem 0.3rem #132729;
+}
+
+.friend-button.find-friend-button {
+  padding: .5rem 1rem .5rem 1rem;
 
 }
+
+.friend-buttons input {
+  margin-left: 1rem;
+  width: 15rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-family: Kaffeesatz,sans-serif;
+}
+
+.friend-button:hover {
+
+  background-color: gold;
+
+}
+/* FriendView Ends */

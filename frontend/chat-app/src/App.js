@@ -1,4 +1,5 @@
 import { BrowserRouter, Link, Route } from "react-router-dom";
+import FriendsView from "./Views/FriendsView";
 import HomeView from "./Views/HomeView";
 
 function App() {
@@ -13,11 +14,7 @@ function App() {
           </div>
 
           <div className="row tab-collection">
-            <div>
-              <Link className="tabs" to="/">
-                Home
-              </Link>
-            </div>
+
             <div>
               <Link className="tabs" to="/messages">
                 Messages
@@ -36,18 +33,14 @@ function App() {
               </Link>
             </div>
 
-            <div>
-              <Link className="tabs" to="/logout">
-                Logout
-              </Link>
-            </div>
           </div>
         </header>
+
         <main>
-          <main>
-            <Route path="/" component={HomeView}></Route>
-          </main>
+            <Route path="/friends" component={FriendsView}></Route>
+            <Route path="/" component={HomeView} exact></Route>
         </main>
+        
         <footer className="row center footer">All Rights reserved</footer>
       </div>
     </BrowserRouter>
