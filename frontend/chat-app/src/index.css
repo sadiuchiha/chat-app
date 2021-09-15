@@ -2,10 +2,11 @@
 
 :root {
   --dark-blue-color: #5788b9;
-  --tab-color: #3f435c;
+  --tab-color: #4a501e;
   --brand-color: #ececec;
+  --lime-color:#c8ee61;
 
-  --hover-effect-color: #2af0be;
+  --hover-effect-color: #d2eee7;
   --white-color: #fff;
   --grey-color: rgb(53, 53, 53);
   --light-grey-color: rgb(77, 77, 77);
@@ -324,5 +325,5 @@ li {
 }
 
 .login-holder.register-holder {
-  background-color: #c8ee61;
+  background-color:var(--lime-color);
 }
