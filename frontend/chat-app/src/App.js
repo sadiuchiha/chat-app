@@ -1,6 +1,9 @@
 import { BrowserRouter, Link, Route } from "react-router-dom";
 import FriendsView from "./Views/FriendsView";
 import HomeView from "./Views/HomeView";
+import LoginView from "./Views/LoginView";
+import RegisterView from "./Views/RegisterView";
+
 
 function App() {
   return (
@@ -35,10 +38,13 @@ function App() {
 
           </div>
         </header>
-
         <main>
+
+            <Route path="/signin" component={LoginView} exact></Route>
+            <Route path="/register" component={RegisterView} exact></Route>
             <Route path="/friends" component={FriendsView}></Route>
             <Route path="/" component={HomeView} exact></Route>
+            
         </main>
         
         <footer className="row center footer">All Rights reserved</footer>

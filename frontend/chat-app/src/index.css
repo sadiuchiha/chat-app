@@ -5,7 +5,7 @@
   --tab-color: #3f435c;
   --brand-color: #ececec;
 
-  --hover-effect-color: #31f02a;
+  --hover-effect-color: #2af0be;
   --white-color: #fff;
   --grey-color: rgb(53, 53, 53);
   --light-grey-color: rgb(77, 77, 77);
@@ -42,7 +42,6 @@ body {
 header {
   grid-area: header;
   background-color: var(--dark-blue-color);
-  
 }
 
 main {
@@ -98,8 +97,11 @@ h2 {
 
 a {
   text-decoration: none;
+  font-family: "Yanone Kaffeesatz", sans-serif;
 }
-
+label {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
 p {
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
@@ -162,7 +164,7 @@ li {
   background-color: #2aa1f0;
   display: flex;
   flex-direction: column;
-  overflow:auto;
+  overflow: auto;
 }
 
 .friend {
@@ -179,13 +181,13 @@ li {
 }
 
 .user-info h3 {
-  font-family: Kaffeesatz,sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
 .user-info h4 {
   font-size: 1.5rem;
   margin-top: -1rem;
-  font-family: Kaffeesatz,sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
 .propic-container-small {
@@ -196,7 +198,6 @@ li {
   border-radius: 50%;
   overflow: hidden;
 }
-
 
 .friend-buttons {
   margin-top: 2rem;
@@ -213,8 +214,7 @@ li {
 }
 
 .friend-button.find-friend-button {
-  padding: .5rem 1rem .5rem 1rem;
-
+  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .friend-buttons input {
@@ -224,12 +224,105 @@ li {
   border: none;
   border-radius: 0.5rem;
   font-size: 1.5rem;
-  font-family: Kaffeesatz,sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
 .friend-button:hover {
-
   background-color: gold;
-
 }
 /* FriendView Ends */
+
+/* logininView */
+
+.login-holder {
+  padding: 3rem;
+  background-color: #7cf078;
+  flex-direction: column;
+  position: fixed;
+  top: 12%;
+  border-radius: 15%;
+  border: #132729 0.3rem solid;
+}
+
+.sign-text-holder {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.sign-text-holder h1 {
+  color: #2b3057;
+  font-family: "Lobster two", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  margin: -1rem;
+  align-content: center;
+}
+
+.inputs-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 1rem;
+  position: relative;
+}
+
+.inputs-box label {
+  font-size: 2.5rem;
+  color: #3f435c;
+}
+
+.inputs-box input {
+  position: relative;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  background-color: lightgoldenrodyellow;
+  border: 0.1rem solid var(--secondary-color);
+  font-size: 1.4rem;
+  color: var(--light-grey-color);
+  letter-spacing: 0.1rem;
+  border-radius: 0.5rem;
+  border: #132729 0.1rem solid;
+}
+
+.login-holder button {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+  background-color: var(--light-grey-color);
+  color: var(--white-color);
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.signup-holder {
+  margin-top: 1rem;
+}
+
+.signup-holder p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.signup-holder a {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.signup-holder a:hover {
+  color: rgb(57, 100, 0);
+}
+
+/* logininView Ends */
+
+.register-input-box {
+  display: flex;
+}
+
+.login-holder.register-holder {
+  background-color: #c8ee61;
+}
