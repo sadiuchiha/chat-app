@@ -4,7 +4,7 @@
   --dark-blue-color: #5788b9;
   --tab-color: #4a501e;
   --brand-color: #ececec;
-  --lime-color:#c8ee61;
+  --lime-color: #c8ee61;
 
   --hover-effect-color: #d2eee7;
   --white-color: #fff;
@@ -81,8 +81,16 @@ a.brand {
   margin-left: 1rem;
 }
 
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .row.center {
   justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -191,10 +199,19 @@ li {
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
-.propic-container-small {
+.small {
   width: 8rem;
   height: 8rem;
   margin: 0.5rem;
+}
+
+.medium {
+  width: 25rem;
+  height: 25rem;
+  margin: 1rem;
+}
+
+.propic-container {
   background-color: coral;
   border-radius: 50%;
   overflow: hidden;
@@ -325,5 +342,32 @@ li {
 }
 
 .login-holder.register-holder {
-  background-color:var(--lime-color);
+  background-color: var(--lime-color);
 }
+
+.set-photo label {
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+
+.set-photo label:nth-child(3) {
+  color: #132729;
+  font-size: 4rem;
+  margin: 1rem;
+}
+
+.set-photo button {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+  background-color: var(--light-grey-color);
+  color: var(--white-color);
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+

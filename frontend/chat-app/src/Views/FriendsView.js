@@ -9,7 +9,7 @@ export default function FriendsView() {
         <div className="friends-list-holder">
           
           <div className="friend">
-            <div className="propic-container-small">
+            <div className="propic-container small">
               <img
                 src="/frontend/chat-app/src/res/defaultpropic.jpg"
                 alt="Profile Pic"
@@ -22,7 +22,7 @@ export default function FriendsView() {
             </div>
           </div>
           <div className="friend">
-            <div className="propic-container-small">
+            <div className="propic-container small">
               <img
                 src="/frontend/chat-app/src/res/defaultpropic.jpg"
                 alt="Profile Pic"
@@ -35,7 +35,7 @@ export default function FriendsView() {
             </div>
           </div>
           <div className="friend">
-            <div className="propic-container-small">
+            <div className="propic-container small">
               <img
                 src="/frontend/chat-app/src/res/defaultpropic.jpg"
                 alt="Profile Pic"
@@ -48,7 +48,7 @@ export default function FriendsView() {
             </div>
           </div>
           <div className="friend">
-            <div className="propic-container-small">
+            <div className="propic-container small">
               <img
                 src="/frontend/chat-app/src/res/defaultpropic.jpg"
                 alt="Profile Pic"
@@ -72,7 +72,7 @@ export default function FriendsView() {
         <div className="friends-list-holder">
 
           <div className="friend">
-            <div className="propic-container-small">
+            <div className="propic-container small">
               <img
                 src="/frontend/chat-app/src/res/defaultpropic.jpg"
                 alt="Profile Pic"
@@ -85,7 +85,7 @@ export default function FriendsView() {
             </div>
           </div>
           <div className="friend">
-            <div className="propic-container-small">
+            <div className="propic-container small">
               <img
                 src="/frontend/chat-app/src/res/defaultpropic.jpg"
                 alt="Profile Pic"
@@ -98,7 +98,7 @@ export default function FriendsView() {
             </div>
           </div>
           <div className="friend">
-            <div className="propic-container-small">
+            <div className="propic-container small">
               <img
                 src="/frontend/chat-app/src/res/defaultpropic.jpg"
                 alt="Profile Pic"
@@ -111,7 +111,7 @@ export default function FriendsView() {
             </div>
           </div>
           <div className="friend">
-            <div className="propic-container-small">
+            <div className="propic-container small">
               <img
                 src="/frontend/chat-app/src/res/defaultpropic.jpg"
                 alt="Profile Pic"
