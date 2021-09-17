@@ -2,6 +2,7 @@ import { BrowserRouter, Link, Route } from "react-router-dom";
 import FriendsView from "./Views/FriendsView";
 import HomeView from "./Views/HomeView";
 import LoginView from "./Views/LoginView";
+import ProfileView from "./Views/ProfileView";
 import RegisterView from "./Views/RegisterView";
 import SetphotoView from "./Views/SetphotoView";
 
@@ -43,6 +44,7 @@ function App() {
 
             <Route path="/signin" component={LoginView} exact></Route>
             <Route path="/register" component={RegisterView} exact></Route>
+            <Route path="/profile" component={ProfileView} exact></Route>
             <Route path="/addPhoto" component={SetphotoView} exact></Route>
             <Route path="/friends" component={FriendsView}></Route>
             <Route path="/" component={HomeView} exact></Route>
