@@ -43,18 +43,23 @@ body {
 header {
   grid-area: header;
   background-color: var(--dark-blue-color);
+  z-index: 2;
 }
 
 main {
   grid-area: main;
   padding: 1rem;
   background-color: rgb(214, 213, 241);
+  z-index: 1;
+
 }
 
 footer {
   grid-area: footer;
   background-color: var(--dark-blue-color);
   color: var(--white-color);
+  z-index: 2;
+
 }
 
 /* Commons */
@@ -147,10 +152,51 @@ li {
 }
 /* Homeview Ends */
 
+/* MessageView */
+
+.sidepanel {
+  position: absolute;
+  top:7%;
+  left: -1%;
+}
+
+.friends-box-v2 h2 {
+  color: var(--brand-color);
+  font-family: Lobster Two, sans-serif;
+  font-size: 2.5rem;
+}
+
+.friends-box-v2 {
+  position: relative;
+  height: 80vh;
+  width: 40vw;
+  opacity: 0.9;
+  background-color: rgb(45, 74, 151);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #132729;
+  margin: 2rem;
+  z-index: 1;
+}
+
+.friends-list-holder-v2 {
+  width: 100%;
+  height: 75%;
+  background-color: #2aa1f0;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+/* MessageView Ends */
+
+
 /* FriendView */
 
 .friends-box {
-  height: 50rem;
+  height: 40rem;
   width: 40rem;
   opacity: 0.9;
   background-color: rgb(45, 74, 151);
@@ -161,6 +207,8 @@ li {
   box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #132729;
   margin: 2rem;
 }
+
+
 
 .friends-box h2 {
   color: var(--brand-color);
@@ -178,7 +226,6 @@ li {
 
 .friend {
   display: flex;
-  border: #132729 0.05rem solid;
 }
 
 .friend:hover {
@@ -415,6 +462,14 @@ li {
   border-bottom: 1px solid black;
   margin-bottom: 1rem;
   }
+
+  .line-v2{
+    width: 100%;
+    height: 1rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    }
+  
 
 
 

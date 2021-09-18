@@ -3,11 +3,9 @@ import React from "react";
 export default function FriendsView() {
   return (
     <div className="row center">
-            
       <div className="friends-box">
         <h2>Added Friends</h2>
         <div className="friends-list-holder">
-          
           <div className="friend">
             <div className="propic-container small">
               <img
@@ -21,6 +19,8 @@ export default function FriendsView() {
               <h4>Status</h4>
             </div>
           </div>
+          <div class="line-v2"></div>
+
           <div className="friend">
             <div className="propic-container small">
               <img
@@ -34,6 +34,8 @@ export default function FriendsView() {
               <h4>Status</h4>
             </div>
           </div>
+          <div class="line-v2"></div>
+
           <div className="friend">
             <div className="propic-container small">
               <img
@@ -47,6 +49,8 @@ export default function FriendsView() {
               <h4>Status</h4>
             </div>
           </div>
+          <div class="line-v2"></div>
+
           <div className="friend">
             <div className="propic-container small">
               <img
@@ -60,8 +64,9 @@ export default function FriendsView() {
               <h4>Status</h4>
             </div>
           </div>
+          <div class="line-v2"></div>
         </div>
-        
+
         <div className="friend-buttons">
           <button className="friend-button">Remove</button>
           <button className="friend-button">Send Message</button>
@@ -70,7 +75,6 @@ export default function FriendsView() {
       <div className="friends-box">
         <h2>Find Friends</h2>
         <div className="friends-list-holder">
-
           <div className="friend">
             <div className="propic-container small">
               <img
@@ -84,6 +88,8 @@ export default function FriendsView() {
               <h4>Status</h4>
             </div>
           </div>
+          <div class="line-v2"></div>
+
           <div className="friend">
             <div className="propic-container small">
               <img
@@ -97,6 +103,8 @@ export default function FriendsView() {
               <h4>Status</h4>
             </div>
           </div>
+          <div class="line-v2"></div>
+
           <div className="friend">
             <div className="propic-container small">
               <img
@@ -110,6 +118,8 @@ export default function FriendsView() {
               <h4>Status</h4>
             </div>
           </div>
+          <div class="line-v2"></div>
+
           <div className="friend">
             <div className="propic-container small">
               <img
@@ -123,12 +133,13 @@ export default function FriendsView() {
               <h4>Status</h4>
             </div>
           </div>
+          <div class="line-v2"></div>
         </div>
-        
+
         <div className="friend-buttons">
           <button className="friend-button find-friend-button">Add</button>
           <button className="friend-button find-friend-button">Search</button>
-          <input type="text"></input>  
+          <input type="text"></input>
         </div>
       </div>
     </div>
