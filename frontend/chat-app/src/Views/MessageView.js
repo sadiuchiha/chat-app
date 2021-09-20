@@ -2,7 +2,7 @@ import React from "react";
 
 export default function MessageView() {
   return (
-    <div className="messagebox row center">
+    <div className="row">
       {sidePanel()}
       {messagePanel()}
     </div>
@@ -83,9 +83,25 @@ var sidePanel = () => {
 var messagePanel = () => {
   return (
     <div className="messenger-container">
-      <div className="messages-container"></div>
+      <h2>Name</h2>
+
+      <div className="messages-container">
+        {message("sender")}
+        {message("receiver")}
+        {message("sender")}
+        {message("sender")}
+        {message("receiver")}
+        {message("receiver")}
+        {message("sender")}
+        {message("receiver")}
+        {message("sender")}
+        {message("sender")}
+        {message("receiver")}
+        {message("receiver")}
+      </div>
+
       <div className="message-lower-panel">
-        <textarea className="message-input"></textarea>
+        <textarea></textarea>
         <button>Send</button>
       </div>
     </div>
@@ -95,11 +111,24 @@ var messagePanel = () => {
 var message = (type) => {
   return type === "sender" ? (
     <div className="sender-message">
+      <p>Time</p>
 
+      <div className="message-container sender">
+        <p>This is a sender message</p>
+      </div>
+      <div className="arc-container s">
+        <div className="arc s"></div>
+      </div>
     </div>
   ) : (
-    <div className="reciever-message">
-        
+    <div className="receiver-message">
+      <div className="arc-container r">
+        <div className="arc r"></div>
+      </div>
+      <div className="message-container receiver">
+        <p>This is a receiver messageasfasfasfasfasfsdsdgasfhafhadfhdafhafdh</p>
+      </div>
+      <p>Time</p>
     </div>
   );
 };
