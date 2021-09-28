@@ -49,7 +49,7 @@ function App() {
             <Route path="/addPhoto" component={SetphotoView} exact></Route>
             <Route path="/friends" component={FriendsView}></Route>
             <Route path="/messages" component={MessageView}></Route>
-            <Route path="/" component={HomeView} exact></Route>
+            <Route path="/home" component={HomeView} exact></Route>
             
         </main>
         
